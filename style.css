@@ -46,7 +46,6 @@ color: rgb(208, 208, 208);
 body {
   font-family: monospace;
   color: #69CDD7;
-  height: 100vh;
   background: rgb(38, 39, 63);
   display: flex;
   align-items: center;
