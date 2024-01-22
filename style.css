@@ -176,22 +176,26 @@ padding: 22px;
 }
 @media screen and (max-width: 549px) {
   .container {
-    width: 400px;
+    width: 350px;
   }
   .title h1 {
-    font-size: 7rem;
+    font-size: 5rem;
   }
   .title h2 {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
   .identity {
-    padding: 32px;
+    padding: 10px;
+    margin-left: 30px;
     }
   .identity-text {
+    font-size: 0.7rem;
+  }
+  .shop i {
     font-size: 1rem;
   }
   .btn {
-    font-size: 1rem;
+    font-size: 0.7rem;
    
   }
   
