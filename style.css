@@ -79,27 +79,17 @@ body {
   text-align: center;
   font-family: "Anton", sans-serif;
   font-weight: 600;
-  font-size: 9rem;
+  font-size: 8rem;
 }
 .title h2 {
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 .content {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 90px;
-  margin-top: 40px;
-}
-.portrait img {
-  height: 50px;
-  width: 50px;
-  border-radius: 50%;
-  border: 2px solid #69CDD7;
+  padding: 40px;
 }
 .social-media {
-  margin-top: 5px;
+  text-align: center;
   font-size: 2.5rem;
 }
 .tooltip {
@@ -176,29 +166,36 @@ padding: 22px;
 }
 @media screen and (max-width: 549px) {
   .container {
-    width: 350px;
+    width: 320px;
   }
   .title h1 {
     font-size: 5rem;
   }
   .title h2 {
-    font-size: 1rem;
+    font-size: 0.8rem;
+  }
+  .content {
+    padding: 20px;
   }
   .identity {
-    padding: 10px;
-    margin-left: 30px;
+    margin-left: 22px;
     }
   .identity-text {
-    font-size: 0.7rem;
+    font-size: 0.72rem;
+  }
+  .shop {
+    height: 230px;
   }
   .shop i {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
   .btn {
-    font-size: 0.7rem;
-   
+    bottom: -50px;
+    right: 0px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 12px 16px;
   }
-  
 }
 
 
