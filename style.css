@@ -73,14 +73,11 @@ body {
   to{ bottom:0; opacity:1 }
 }
 .screen {
-  margin: 0 auto;
-  min-height: 500px;
   display: flex;
   align-items: center;
   justify-content: flex-end;
 }
 .container {
-  margin: 0 auto;
   width: 450px;
   background: #1a1b2b;
 }
