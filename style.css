@@ -1,52 +1,40 @@
-@import url('https://fonts.googleapis.com/css2?family=Anton&family=Gruppo&display=swap');
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-a {
-  color: #69CDD7;
   list-style: none;
   text-decoration: none;
+  outline: none;
 }
-a:hover {
-  color: #fba8d1;
-}
-#orange {
-  color: #fba8d1;
+
+#pink {
+  color: #fba8d1d2;
 }
 #green-light {
   color: #519ea4;
 }
-#red {
-  color: rgb(242, 251, 79);
+#yellow {
+  color: rgba(242, 251, 79, 0.719);
 }
 #blue {
-  color: rgb(37, 171, 254);
+  color: rgba(37, 254, 225, 0.808);
 }
 #purple {
-  color: rgb(126, 186, 254);
+  color: rgba(126, 186, 254, 0.808);
 }
 #green {
-  color: #80ff80;
+  color: #80ff80ce;
 }
-#green-dark {
-  color: #618a7c62;
+a {
+  color: #69CDD7;
 }
-#green_hex {
-color: #69CDD7;
-}
-#blue-light {
-color: rgb(111, 176, 255);
-}
-#white {
-color: rgb(208, 208, 208);
+a:hover {
+  color: #fba8d1;
 }
 body {
   font-family: monospace;
   color: #69CDD7;
-  background: rgb(38, 39, 63);
+  background: #37385c;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -66,139 +54,95 @@ body {
   from{ bottom:-100px; opacity:0 } 
   to{ bottom:0; opacity:1 }
 }
-.screen {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-}
+
 .container {
-  width: 450px;
-  background: #1a1b2b;
+  width: 600px;
+  margin: 0 auto;
+  background: #23243a;
 }
 .title h1 {
+  font-size: 10rem;
   text-align: center;
-  font-family: "Anton", sans-serif;
-  font-weight: 600;
-  font-size: 8rem;
 }
 .title h2 {
+  font-size: 2rem;
   text-align: center;
-  font-size: 1.2rem;
-}
-.content {
-  padding: 40px;
 }
 .social-media {
-  text-align: center;
   font-size: 2.5rem;
+  text-align: center;
+  margin-top: 60px;
+  margin-bottom: 50px;
+  color: #69CDD7;
 }
 .tooltip {
-position: relative;
-display: inline-block;
-}
-.tooltip .tooltiptext {
-visibility: hidden;
-background-color: #fba8d1;
-border-radius: 10px;
-color: #203e41;
-text-align: center;
-font-size: 1rem;
-letter-spacing: 0rem;
-padding: 10px;
-/* Position the tooltip */
-position: absolute;
-width: 100px;
-bottom: 115%;
-left: 40%;
-margin-left: -40px; /* Use half of the width (120/2 = 60), to center the tooltip */
-}
-.tooltip:hover .tooltiptext {
-visibility: visible;
-}
-.identity {
-padding: 22px;
-}
-.identity-text {
-  font-size: 1.2rem;
-}
-.shop {
-  background: #353758;
-  height: 200px;
-  padding: 40px;
-}
-#factory {
-  color: #fba8d1;
-}
-#description {
-  color: #a3ced2;
-  margin-top: 20px;
-}
-.shop h1 {
-  margin-bottom: 10px;
-}
-.shop i {
-  margin-top: 30px;
-  font-size: 1.5rem;
-  margin-top: -2px;
-}
-.button {
   position: relative;
-}
-.btn {
-  font-family: monospace;
+  display: inline-block;
+  }
+  .tooltip .tooltiptext {
+  visibility: hidden;
+  background-color: #fba8d1;
+  border-radius: 10px;
+  color: #203e41;
+  text-align: center;
+  font-size: 1rem;
+  letter-spacing: 0rem;
+  padding: 10px;
+  /* Position the tooltip */
   position: absolute;
-  bottom: -20px;
-  right: -15px;
-  max-width: max-content;
-  background: transparent;
-  color: #69CDD7;
-  font-size: 1.2rem;
-  font-weight: 500;
-  border: 2px solid #69CDD7;
-  padding: 12px 16px;
-  cursor: pointer;
-  transition: all 0.3s ease-in;
-}
-.btn:hover {
-  background: #ffdeef38;
-  border: 2px solid #fba8d1;
-  color: #fba8d1;
-}
-@media screen and (max-width: 549px) {
-  .container {
-    width: 320px;
+  width: 100px;
+  bottom: 115%;
+  left: 40%;
+  margin-left: -40px; /* Use half of the width (120/2 = 60), to center the tooltip */
   }
-  .title h1 {
-    font-size: 5rem;
-  }
-  .title h2 {
-    font-size: 0.8rem;
-  }
-  .content {
-    padding: 20px;
+  .tooltip:hover .tooltiptext {
+  visibility: visible;
   }
   .identity {
-    margin-left: 22px;
-    }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  padding: 20px;
+  background: #2f304e56;
+  }
   .identity-text {
-    font-size: 0.72rem;
+    font-size: 1.5rem;
   }
   .shop {
-    height: 230px;
+    padding: 50px;
   }
-  .shop i {
-    font-size: 1.2rem;
+  #factory {
+    color: #fba8d1;
+    margin-bottom: 10px;
   }
-  .btn {
-    bottom: -50px;
-    right: 0px;
-    font-size: 1.2rem;
-    font-weight: 500;
-    padding: 12px 16px;
+  .shop h2 {
+    font-size: 2rem;
   }
-}
-
-
+  .shop h3 {
+font-size: 1.5rem;
+  }
+  .shop h4 {
+    font-size: 1rem;
+    color: #6fb0ff;
+  }
+  .button {
+    margin-top: 20px;
+    border: 1px solid #69CDD7;
+    background: #69ced728;
+    padding: 13px 30px;
+    display: inline-block;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    font: 700 1.5rem monospace;
+    transition: 0.3s;
+  }
+  .button:hover,
+  footer a:hover {
+    border: 1px solid #fba8d1;
+    background: #fba8d136;
+  }
 
 
 
