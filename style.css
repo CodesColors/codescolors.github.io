@@ -69,17 +69,11 @@
   }
 /* *************** end back to top ****************** */
 /* ************** nav ************************ */
-  .navbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between; 
-    padding: 10px;
-  }
   nav {
     position: fixed;
-    left: 0;
     width: 100%;
-    background: #121212;
+    left: 0;
+    background: #1c1c1c;
     z-index: 100;
     padding-bottom: 20px;
     display: flex;
@@ -89,6 +83,7 @@
   }
   ul {
     font-size: 1.1rem;
+    padding: 10px;
     display: flex;
     gap: 30px;  
   }
