@@ -34,11 +34,13 @@
     color: rgb(167, 61, 167);
   }
   body {
-    width: calc(90% - 10px);
-    margin: 0 auto;
     background: #121212;
     font-family: "Kanit", sans-serif;
     color: var(--color3);
+  }
+  main {
+    width: calc(90% - 10px);
+    margin: 0 auto;
   }
   /* ********** back to top *********** */
   .backtotop{
@@ -185,14 +187,20 @@
     align-items: center;
     justify-content: center;
   }
-  .section-about #avatar {
+  .images {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+  #avatar {
     height: 270px;
     width: 270px;
     background: #e0e0e0;
     border-radius: 20px;
     border: 5px solid var(--color1) ;
   }
-  .digitaldesigner-text img {
+  #digitaldesigner-text {
     margin-top: 10px;
     height: 65px;
     width: 413px;
