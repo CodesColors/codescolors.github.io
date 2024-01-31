@@ -72,7 +72,7 @@
   nav {
     position: fixed;
     width: 100%;
-    left: 0;
+    
     background: #1c1c1c;
     z-index: 100;
     padding-bottom: 20px;
