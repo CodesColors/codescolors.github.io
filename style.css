@@ -12,7 +12,8 @@
     --color1: #00a0e4;
     --color2: #44d500;
     --color3: #ececec;
-    --color4: #1c1c1c;
+    --color4: #575757;
+    --color5: rgb(35, 35, 35);
   }
   #blue {
     color: var(--color1);
@@ -61,6 +62,7 @@
     width: 70px;
     border-radius: 50%;
     background:#000000;
+    border: 2px solid var(--color1);
   }
   .backtotop i:hover {
     color: rgb(255, 255, 255);
@@ -153,7 +155,7 @@
     font-size: 5vw;
   }
   p {
-    font-size: 4vw;
+    font-size: 5vw;
   }
   /* **************** end section - title - subtitile *************** */
   /* ****************** section banner *********************** */
@@ -173,7 +175,7 @@
   .section-banner .title3 {
     font-size: 5vw;
     font-weight: 600;
-    color: rgb(40, 40, 40);
+    color: var(--color4);
     text-align: center;
   }
   /* *******************end section banner ******************* */
@@ -241,8 +243,8 @@
   /* ******************** section identity ******************* */
   .identity-text {
     font-family: monospace, sans-serif;
-    font-size: 3vw;
-    background: var(--color4);
+    font-size: 5vw;
+    background: var(--color5);
     padding: 20px;
     margin: 30px 10px 10px 10px;
     border-radius: 20px;
@@ -266,7 +268,7 @@
   .skill__type {
     color: #fff;
     font-weight: 300;
-    font-size: 2.5vw;
+    font-size: 3.5vw;
     letter-spacing: .145em;
     text-transform: uppercase;
     width: 5em;
@@ -336,17 +338,17 @@
     text-align: center;
   }
   .card-title2 {
-    font-size: 2vw;
+    font-size: 3vw;
     text-align: center;
     padding-top: 10px;
-    color: #3c3c3c;
-    margin-top: 50px;
+    color: var(--color4);
+    margin-top: 30px;
   }
   .price1 {
     width: 80%;
     margin: 0 auto;
     padding: 20px;
-    background: #141414;
+    background: var(--color5);
     border-radius: 15px;
     font-size: 8vw;
     margin-bottom: 50px;
@@ -357,7 +359,10 @@
   }
   .descriptif {
     text-align: center;
-    padding: 30px;
+    padding: 20px;
+  }
+  #option {
+    font-size: 3vw;
   }
   /* *********************** end section card *********************** */
   /* ************** section contact *************************** */
