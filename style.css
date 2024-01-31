@@ -188,8 +188,8 @@
     justify-content: center;
   }
   .section-about #avatar {
-    height: 300px;
-    width: 300px;
+    height: 270px;
+    width: 270px;
     background: #e0e0e0;
     border-radius: 20px;
     border: 5px solid var(--color1) ;
@@ -248,7 +248,7 @@
   /* ******************** section identity ******************* */
   .identity-text {
     font-family: monospace, sans-serif;
-    font-size: 5vw;
+    font-size: 4.8vw;
     background: var(--color5);
     padding: 20px;
     margin: 30px 10px 10px 10px;
