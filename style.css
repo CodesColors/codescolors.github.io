@@ -285,7 +285,7 @@
     width: 5em;
   }
   .skill__outer-bar, .skill__inner-bar {
-    height: 1.5rem;
+    height: 1.2rem;
   }
   .skill__outer-bar {
     margin-top: 1em;
@@ -298,23 +298,23 @@
   }
   .skill__html {
     width: 60%;
-    background: var(--color2);
+    background: var(--color1);
   }
   .skill__css {
     width: 50%;
-    background: var(--color2);
+    background: var(--color1);
   }
   .skill__photography {
     width: 90%;
-    background: var(--color1);
+    background: var(--color2);
   }
   .skill__video {
     width: 80%;
-    background: var(--color1);
+    background: var(--color2);
   }
   .skill__graphism {
     width: 80%;
-    background: var(--color1);
+    background: var(--color2);
   }
 
   @keyframes fillBar {
@@ -334,7 +334,7 @@
    width: 80%; 
   }
   .card {
-    background: linear-gradient(to right, #00B600, #019ae1);
+    background: linear-gradient(to right, var(--color1), var(--color2));
     padding: 2px;
     border-radius: 15px;
   }
@@ -351,9 +351,7 @@
   .card-title2 {
     font-size: 3vw;
     text-align: center;
-    padding-top: 10px;
     color: var(--color4);
-    margin-top: 30px;
   }
   .price1 {
     width: 80%;
