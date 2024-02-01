@@ -21,37 +21,16 @@
   #green {
     color: var(--color2);
   }
-  #greydark {
-    color: #444444;
-  }
-  #greylight {
-    color: #878787;
-  }
-  #orange {
-    color: #dc8f00;
-  }
-  #purple {
-    color: rgb(167, 61, 167);
-  }
-  body {
-    background: #121212;
-    font-family: "Kanit", sans-serif;
-    color: var(--color3);
-  }
-  main {
-    width: 95%;
-    margin: 0 auto;
-  }
   /* ********** back to top *********** */
   .backtotop{
     text-align: center;
     position:fixed;
-    bottom:40px;
-    right:40px;
+    bottom:80px;
+    right:20px;
     font-size: 3rem;
     text-decoration:none;
     transition:0.3s;
-    z-index: 10;
+    z-index: 100;
   }
   .backtotop i {
     display: flex;
@@ -68,24 +47,50 @@
     color: rgb(255, 255, 255);
   }
 /* *************** end back to top ****************** */
-/* ************** nav ************************ */
-  nav {
-    position: fixed;
-    width: 100%;
-    
-    background: #1c1c1c;
-    z-index: 100;
+body {
+    width: 95%;
+    margin: 0 auto;
+    background: #121212;
+    font-family: "Kanit", sans-serif;
+    color: var(--color3);
+  }
+  /* **************** section - title - subtitile *************** */
+  .section-title {
+    text-align: center;
+    padding-top: 140px;
     padding-bottom: 20px;
+    font-size: 7vw;
+  }
+  .section-subtitle {
+    text-align: center;
+    font-size: 5vw;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  p {
+    text-align: center;
+    font-size: 4vw;
+  }
+  /* **************** end section - title - subtitile *************** */
+  /* ************** nav ************************ */
+  .navbar {
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    background: #00212f;
   }
   ul {
+    width: 480px;
     font-size: 1.1rem;
-    padding: 10px;
+    padding: 20px;
     display: flex;
-    gap: 30px;  
+    align-items: center;
+    justify-content: space-between;
   }
   .link-hover {
     position: relative;
@@ -114,61 +119,33 @@
   }
 /* ************** end nav ******************** */
 /* *************** logo text ***************** */
-  .logo-text {
+.logo-text {
+    width: 100%;
+    left: 0;
+    position: fixed;
+    z-index: 99;
+    background: #00212f;
+    text-align: center;
     font-size: 3.5rem;
     font-weight: 800;
   }
-  .floating {
-    animation-name: floating;
-    animation-duration: 4s;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out;
-  } 
-  @keyframes floating {
-    0% {
-      transform: translate(0, 0px);
-    }
-    50% {
-      transform: translate(0, 10px);
-    }
-    100% {
-      transform: translate(0, 0px);
-    }
-  }
 /* *************** end logo text ************* */
-/* **************** section - title - subtitile *************** */
-  .section {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .section-title {
-    padding-top: 180px;
-    font-size: 7vw;
-  }
-  .section-subtitle {
-    font-size: 5vw;
-  }
-  p {
-    font-size: 4vw;
-  }
-  /* **************** end section - title - subtitile *************** */
-  /* ****************** section banner *********************** */
-  .section-banner {
-    padding-top: 180px;
+/* ****************** section banner *********************** */
+.section-banner {
+    padding-top: 140px;
   }
   .section-banner .title1 {
-    font-size: 5.5vw;
+    font-size: 7vw;
     font-weight: 600;
     text-align: center;
   }
   .section-banner .title2 {
-    font-size: 4vw;
+    font-size: 6vw;
     font-weight: 600;
     text-align: center;
   }
   .section-banner .title3 {
-    font-size: 5vw;
+    font-size: 6vw;
     font-weight: 600;
     color: var(--color4);
     text-align: center;
@@ -191,7 +168,7 @@
   #avatar {
     height: 300px;
     width: 300px;
-    background: #e0e0e0;
+    background: #c1dae9;
     border-radius: 20px;
     border: 5px solid var(--color1) ;
   }
@@ -201,7 +178,7 @@
     width: 413px;
   }
   .social-media {
-    padding-top: 20px;
+    padding-top: 30px;
     display: flex;
     gap: 30px;
   }
@@ -212,7 +189,7 @@
   }
   .social-media i:hover {
     font-size: 3rem;
-    color: var(--color2);
+    color: var(--color1);
     transform: scale(1.1);
     filter: none;
   }
@@ -224,7 +201,7 @@
     visibility: hidden;
     background-color: transparent;
     border-radius: 10px;
-    color: var(--color2);
+    color: var(--color1);
     text-align: center;
     font-size: 1rem;
     letter-spacing: 0rem;
@@ -248,16 +225,11 @@
   /* ********************end section about ****************** */
   /* ******************** section identity ******************* */
   .identity-text {
-    font-family: monospace, sans-serif;
+    text-align: center;
     font-size: 4.8vw;
     background: var(--color5);
     padding: 20px;
-    margin: 30px 10px 10px 10px;
     border-radius: 20px;
-  }
-  .identity-text p {
-    margin-top: 30px;
-    letter-spacing: 1px;
   }
   /* ******************* end section identity ****************** */
   /* ******************* section skills ************************ */
@@ -318,124 +290,114 @@
     }
   }
   /*  ******************** end section skills ********************* */
-  /*  *********************** section services ********************** */
-  #pack {
-    padding-top: 30px;
-  }
-  /*  ********************* end section services ********************** */
   /* ******************** section card *************************** */
   .section-card {
-   padding-top: 50px;
-   width: 80%; 
-  }
-  .card {
-    background: linear-gradient(to right, var(--color1), var(--color2));
-    padding: 2px;
-    border-radius: 15px;
-  }
-  .module {
-    background: #000000;
-    color: #dddddd;
-    padding: 2px;
-    border-radius: 15px;  
-  }
-  .card-title1 {
-    font-size: 4.5vw;
-    text-align: center;
-  }
-  .card-title2 {
-    font-size: 3vw;
-    text-align: center;
-    color: var(--color4);
-  }
-  .price1 {
-    width: 80%;
-    margin: 0 auto;
-    padding: 20px;
-    background: var(--color5);
-    border-radius: 15px;
-    font-size: 8vw;
-    margin-bottom: 50px;
-    text-align: center;
-  }
-  #pack {
-    text-align: center;
-  }
-  .descriptif {
-    text-align: center;
-    padding: 20px;
-  }
-  #option {
-    font-size: 3vw;
-  }
-  /* *********************** end section card *********************** */
-  /* ************** section contact *************************** */
-  .section-contact {
-    padding-top: 360px;
-    padding-bottom: 300px;
-  }
-  .getintouch {
-    font-size: 20vw;
-    font-weight: 800;
-    text-align: center;
-  }
-  .email {
-    font-size: 7vw;
-    text-align: center;
-  }
-  .projet {
-    font-size: 4vw;
-    text-align: center;
-  }
-  /* ******************* end section contact ******************** */
-   /* ANIMATION ELEMENTS */
-[data-animate-in] {
-    opacity: 0;
-    transition: transform 0.8s ease, opacity 0.8s ease
-  }
-  
-  [data-animate-in="up"] {
-    transform: translate3d(0, 24px, 0)
-  }
-  
-  [data-animate-in="left"] {
-    transform: translate3d(-25%, 0, 0)
-  }
-  
-  [data-animate-in="right"] {
-    transform: translate3d(25%, 0, 0)
-  }
-  
-  [data-animate-in="down"] {
-    transform: translate3d(0, -24px, 0)
-  }
-  
-  [data-animate-in="fadeIn"] {
-    transform: translate3d(0, 0, 0)
-  }
-  
-  [data-animate-in].in-view {
-    opacity: 1;
-    transform: translate3d(0, 0, 0);
-    -webkit-transform: translate3d(0, 0, 0);
-    transition: transform 0.6s ease, opacity 0.6s ease
-  }
-  
-  .fade-in {
-    opacity: 0;
-    transition: opacity 1s ease
-  }
-  
-  .page-loaded .fade-in,.page-loaded.fade-in {
-    opacity: 1
-  }
-  
-  .isSafari.isTouch [data-animate-in],.isSafari.isTouch [data-animate-in="up"] {
-    opacity: 1;
-    transition: none;
-    transform: none
-  }
-/* ****************** RESPONSIVE ********************** */
-
-
-
+    padding-top: 50px;
+   }
+   .card {
+     background: linear-gradient(to right, var(--color1), var(--color2));
+     padding: 2px;
+     border-radius: 15px;
+   }
+   .module {
+     background: #000000;
+     color: #dddddd;
+     padding: 2px;
+     border-radius: 15px;  
+   }
+   .card-title1 {
+     font-size: 4.5vw;
+     text-align: center;
+   }
+   .card-title2 {
+     font-size: 3vw;
+     text-align: center;
+     color: var(--color4);
+   }
+   .price1 {
+     width: 80%;
+     margin: 0 auto;
+     padding: 20px;
+     background: var(--color5);
+     border-radius: 15px;
+     font-size: 8vw;
+     margin-bottom: 50px;
+     text-align: center;
+   }
+   #pack {
+     text-align: center;
+   }
+   .descriptif {
+     text-align: center;
+     padding: 20px;
+   }
+   #option {
+     font-size: 3vw;
+   }
+   /* *********************** end section card *********************** */
+   /* ************** section contact *************************** */
+   .section-contact {
+     padding-top: 360px;
+     padding-bottom: 300px;
+   }
+   .getintouch {
+     font-size: 20vw;
+     font-weight: 800;
+     text-align: center;
+   }
+   .email {
+     font-size: 7vw;
+     text-align: center;
+   }
+   .projet {
+     font-size: 4vw;
+     text-align: center;
+   }
+   /* ******************* end section contact ******************** */
+    /* ANIMATION ELEMENTS */
+ [data-animate-in] {
+     opacity: 0;
+     transition: transform 0.8s ease, opacity 0.8s ease
+   }
+   
+   [data-animate-in="up"] {
+     transform: translate3d(0, 24px, 0)
+   }
+   
+   [data-animate-in="left"] {
+     transform: translate3d(-25%, 0, 0)
+   }
+   
+   [data-animate-in="right"] {
+     transform: translate3d(25%, 0, 0)
+   }
+   
+   [data-animate-in="down"] {
+     transform: translate3d(0, -24px, 0)
+   }
+   
+   [data-animate-in="fadeIn"] {
+     transform: translate3d(0, 0, 0)
+   }
+   
+   [data-animate-in].in-view {
+     opacity: 1;
+     transform: translate3d(0, 0, 0);
+     -webkit-transform: translate3d(0, 0, 0);
+     transition: transform 0.6s ease, opacity 0.6s ease
+   }
+   
+   .fade-in {
+     opacity: 0;
+     transition: opacity 1s ease
+   }
+   
+   .page-loaded .fade-in,.page-loaded.fade-in {
+     opacity: 1
+   }
+   
+   .isSafari.isTouch [data-animate-in],.isSafari.isTouch [data-animate-in="up"] {
+     opacity: 1;
+     transition: none;
+     transform: none
+   }
