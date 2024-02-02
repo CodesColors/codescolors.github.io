@@ -14,6 +14,7 @@
     --color3: #ececec;
     --color4: #575757;
     --color5: rgb(35, 35, 35);
+    --color6: #00212f;
   }
   #blue {
     color: var(--color1);
@@ -64,8 +65,8 @@ body {
   .section-subtitle {
     text-align: center;
     font-size: 5vw;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
   p {
     font-size: 4vw;
@@ -81,7 +82,7 @@ body {
     width: 100%;
     left: 0;
     bottom: 0;
-    background: #00212f;
+    background: var(--color6);
   }
   ul {
     width: 480px;
@@ -123,7 +124,7 @@ body {
     left: 0;
     position: fixed;
     z-index: 99;
-    background: #00212f;
+    background: var(--color6);
     text-align: center;
     font-size: 3.5rem;
     font-weight: 800;
@@ -134,19 +135,19 @@ body {
     padding-top: 140px;
   }
   .section-banner .title1 {
-    font-size: 7vw;
+    font-size: 20vw;
     font-weight: 600;
     text-align: center;
   }
   .section-banner .title2 {
-    font-size: 6vw;
+    font-size: 6.2vw;
     font-weight: 600;
     text-align: center;
   }
   .section-banner .title3 {
-    font-size: 6vw;
+    font-size: 3.5vw;
     font-weight: 600;
-    color: var(--color4);
+    color: var(--color1);
     text-align: center;
   }
   /* *******************end section banner ******************* */
@@ -165,7 +166,6 @@ body {
     justify-content: center;
   }
   #avatar {
-    
     width: 100%;
     background: #c1dae9;
     border-radius: 20px;
@@ -235,64 +235,26 @@ body {
     padding: 30px;
   }
   /* ******************* end section identity ****************** */
-  /* ******************* section skills ************************ */
-  .skill {
-    display: flex;
-    flex-direction: column;
-    align-self: center;
+  /* ******************* section skills *********************** */
+  .section-skills {
+    background: var(--color5);
+    padding: 20px;
+    border-radius: 20px;
   }
-  .skil {
-    margin: 1em 0;
-    position: relative;
-    width: 100%;
+  .section-skills p {
+    padding: 30px;
   }
-  .skill__type {
-    color: #fff;
-    font-weight: 300;
-    font-size: 3.5vw;
-    letter-spacing: .145em;
-    text-transform: uppercase;
-    width: 5em;
-  }
-  .skill__outer-bar, .skill__inner-bar {
-    height: 1.2rem;
-  }
-  .skill__outer-bar {
-    margin-top: 1em;
-    background: #333;
-  }
-  .skill__inner-bar {
-    animation: fillBar 1s forwards;
-    transform: scaleX(0);
-    transform-origin: 0 0;
-  }
-  .skill__html {
-    width: 60%;
-    background: var(--color1);
-  }
-  .skill__css {
-    width: 50%;
-    background: var(--color1);
-  }
-  .skill__photography {
-    width: 90%;
-    background: var(--color2);
-  }
-  .skill__video {
-    width: 80%;
-    background: var(--color2);
-  }
-  .skill__graphism {
-    width: 80%;
-    background: var(--color2);
-  }
-
-  @keyframes fillBar {
-    to {
-        transform: scaleX(1);
-    }
-  }
-  /*  ******************** end section skills ********************* */
+  /* ******************** end section skills ********************* */
+  /* ************************* section services ******************* */
+.section-services {
+  background: var(--color5);
+    padding: 20px;
+    border-radius: 20px;
+}
+.section-services p {
+  padding: 30px;
+}
+  /* ******************** end section services ********************** */
   /* ******************** section card *************************** */
   .section-card {
     padding-top: 50px;
@@ -409,13 +371,13 @@ body {
     width: 830px;
   }
   .section-banner .title1 {
-    font-size: 4rem;
+    font-size: 11rem;
   }
   .section-banner .title2 {
-    font-size: 3.5rem;
+    font-size: 3.6rem;
   }
   .section-banner .title3 {
-    font-size: 3.5rem;
+    font-size: 2rem;
   }
   .social-media i {
     font-size: 5rem;
@@ -425,9 +387,6 @@ body {
   }
   .identity-text {
     font-size: 2rem;
-  }
-  .skill__type {
-    font-size: 1.8rem;
   }
   .card-title1 {
     font-size: 2rem;
