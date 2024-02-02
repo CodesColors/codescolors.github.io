@@ -68,7 +68,6 @@ body {
     padding-bottom: 20px;
   }
   p {
-    text-align: center;
     font-size: 4vw;
   }
   /* **************** end section - title - subtitile *************** */
@@ -224,11 +223,16 @@ body {
   /* ********************end section about ****************** */
   /* ******************** section identity ******************* */
   .identity-text {
-    text-align: center;
     font-size: 4.8vw;
     background: var(--color5);
     padding: 20px;
     border-radius: 20px;
+  }
+  #it1 {
+    padding-top: 0;
+  }
+  .identity-text p {
+    padding: 30px;
   }
   /* ******************* end section identity ****************** */
   /* ******************* section skills ************************ */
