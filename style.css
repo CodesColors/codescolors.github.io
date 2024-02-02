@@ -336,7 +336,6 @@ body {
    /* *********************** end section card *********************** */
    /* ************** section contact *************************** */
    .section-contact {
-     padding-top: 140px;
      padding-bottom: 300px;
    }
    .getintouch {
@@ -400,3 +399,61 @@ body {
      transition: none;
      transform: none
    }
+   /* ****************** RESPONSIVE ********************** */
+@media screen and (min-width:900px) {
+  body {
+    width: 830px;
+  }
+  .section-banner .title1 {
+    font-size: 4rem;
+  }
+  .section-banner .title2 {
+    font-size: 3.5rem;
+  }
+  .section-banner .title3 {
+    font-size: 3.5rem;
+  }
+  .social-media i {
+    font-size: 5rem;
+  }
+  .social-media i:hover {
+    font-size: 5rem;
+  }
+  .identity-text {
+    font-size: 2rem;
+  }
+  .skill__type {
+    font-size: 1.8rem;
+  }
+  .card-title1 {
+    font-size: 2rem;
+  }
+  .card-title2 {
+    font-size: 1.8rem;
+  }
+  .price1 {
+    font-size: 4rem;
+  }
+  #option {
+    font-size: 1.5rem;
+  }
+  .section-title {
+    font-size: 5rem;
+  }
+  .section-subtitle {
+    font-size: 3rem;
+  }
+  p {
+    font-size: 2rem;
+  }
+  .getintouch {
+    font-size: 8rem;
+  }
+  .email {
+    font-size: 3.8rem;
+  }
+  .projet {
+    font-size: 2rem;
+  }
+}  
+
