@@ -65,8 +65,6 @@ body {
   .section-subtitle {
     text-align: center;
     font-size: 5vw;
-    padding-top: 10px;
-    padding-bottom: 10px;
   }
   p {
     font-size: 4vw;
@@ -132,7 +130,7 @@ body {
 /* *************** end logo text ************* */
 /* ****************** section banner *********************** */
 .section-banner {
-    padding-top: 140px;
+    padding-top: 100px;
   }
   .section-banner .title1 {
     font-size: 20vw;
@@ -229,7 +227,7 @@ body {
     border-radius: 20px;
   }
   #it1 {
-    padding-top: 0;
+    padding-top: 15px;
   }
   .identity-text p {
     padding: 30px;
@@ -291,6 +289,7 @@ body {
    }
    #pack {
      text-align: center;
+     padding-top: 20px;
    }
    .descriptif {
      text-align: center;
