@@ -166,29 +166,28 @@ body {
     justify-content: center;
   }
   #avatar {
-    height: 300px;
-    width: 300px;
+    
+    width: 100%;
     background: #c1dae9;
     border-radius: 20px;
     border: 5px solid var(--color1) ;
   }
-  #digitaldesigner-text {
+  #digitaldesigner {
     padding-top: 10px;
-    height: 65px;
-    width: 413px;
+    width: 100%;
   }
   .social-media {
-    padding-top: 30px;
+    padding-top: 50px;
     display: flex;
     gap: 30px;
   }
   .social-media i {
-    font-size: 3rem;
+    font-size: 10vw;
     color: var(--color3);
 	transform: scale(1);
   }
   .social-media i:hover {
-    font-size: 3rem;
+    font-size: 10vw;
     color: var(--color1);
     transform: scale(1.1);
     filter: none;
@@ -203,13 +202,13 @@ body {
     border-radius: 10px;
     color: var(--color1);
     text-align: center;
-    font-size: 1rem;
+    font-size: 1.8rem;
     letter-spacing: 0rem;
     padding: 6px;
     /* Position the tooltip */
     position: absolute;
     width: 120px;
-    bottom: 115%;
+    bottom: 100%;
     left: 50%;
     margin-left: -60px; /* Use half of the width (120/2 = 60), to center the tooltip */
   }
